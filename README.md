@@ -18,7 +18,7 @@
 如果想绑多几个快捷键，最简单的方法，复制多几个plugin文件夹，修改对应的【background.js】和【manifest.json】，记得在【manifest.json】上方的 "name": "Bookmark Navigator"把名字换一下。然后导入多几个拓展程序。
 
 ##这是一个AHK脚本语法事例，方便不会AHK脚本语法的参考，以自行编辑
-
+```
 #NoEnv
 #SingleInstance Force
 SetBatchLines, -1
@@ -29,5 +29,5 @@ Send, {Alt Down}{1}{Alt Up}
 return
 
 $5::ExitApp
-
-上述脚本会在你按下QWERTY上方的数字键1时，输出【Alt+1】
+```
+上述脚本会在你按下QWERTY上方的数字键1时，输出【Alt+1】，按数字键5时，退出脚本。
