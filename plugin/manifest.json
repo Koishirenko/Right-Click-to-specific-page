@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Navigator",
+  "version": "1.0",
+  "description": "Navigate to a specific page using Alt+1.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Bookmark Navigator"
+  },
+  "commands": {
+    "go-to-specific-page": {
+      "suggested_key": {
+        "default": "Alt+1"
+      },
+      "description": "Go to specific page"
+    }
+  }
+}
