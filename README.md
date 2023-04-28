@@ -14,8 +14,18 @@
 
 ## 如何修改
 要修改浏览器插件的跳转页面，请笔记本打开【background.js】，内有中文注释
-要修改浏览器插件的快捷键，请笔记本打开【manifest.json】，在"default": "Alt+1"这一行代码，改键，应该是不能改单键的，得是组合键，要改单键请配合AHK脚本使用。
-如果想绑多几个快捷键，最简单的方法，复制多几个plugin文件夹，修改对应的【background.js】和【manifest.json】，记得在【manifest.json】上方的 "name": "Bookmark Navigator"把名字换一下。然后导入多几个拓展程序。
+
+要修改浏览器插件的快捷键，请笔记本打开【manifest.json】，在
+```
+"default": "Alt+1"
+```
+这一行代码，改键，应该是不能改单键的，得是组合键，要改单键请配合AHK脚本使用。
+
+如果想绑多几个快捷键，最简单的方法，复制多几个plugin文件夹，修改对应的【background.js】和【manifest.json】，记得在【manifest.json】上方的
+```
+"name": "Bookmark Navigator"
+```
+把名字换一下。然后导入多几个拓展程序。
 
 ##这是一个AHK脚本语法事例，方便不会AHK脚本语法的参考，以自行编辑
 ```
