@@ -3,10 +3,21 @@
 SetBatchLines, -1
 SetKeyDelay, 50
 
+global scriptEnabled := true
+
 RButton::
-Send, {Alt Down}{1}{Alt Up}
+if (scriptEnabled) {
+    Send, {Alt Down}{1}{Alt Up}
+} else {
+    Send, {RButton}
+}
 return
 
-RButton Up::return
-
-$5::ExitApp
+$5::
+scriptEnabled := !scriptEnabled
+if (scriptEnabled) {
+    TrayTip, Script Status, Script is now enabled, 1, 1
+} else {
+    TrayTip, Script Status, Script is now disabled, 1, 1
+}
+return
