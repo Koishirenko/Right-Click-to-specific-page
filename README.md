@@ -32,7 +32,11 @@
 ```
 "name": "Bookmark Navigator"
 ```
-把名字换一下。然后导入多几个拓展程序。
+和
+```
+    "default_title": "Bookmark Navigator"
+```
+把名字换一下。然后改个不同的icon.png图片替换掉原来的，要求尺寸48*48像素，然后导入多几个拓展程序。
 
 ## 这是一个AHK脚本语法示例，方便不会AHK脚本语法的参考，以自行编辑
 ```
